@@ -1,0 +1,7 @@
+#pnpm install 혹은 build 시, 모든 workspace 패키지안의 package.json 모두 탐색하여 필요 패키지를 일괄 설치
+# 각 앱이 공통으로 사용하는 library는 root에서 하번만 설치하고 필요한 각 앱에 link하는 방식을 사용하여 파일 용량이 감소
+#packages === workspace
+
+packages:
+  - apps/*
+  - packages/*
